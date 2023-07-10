@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const { MONGODBURI } = require("../helpers/constants");
 const connectDB = async  () => {
-  console.log(MONGODBURI)
   //MongoDB connection
   try{
     await mongoose.connect(MONGODBURI)
